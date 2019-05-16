@@ -13,7 +13,7 @@ def word_substituter(tweet)
   words.each do |word|
     puts word
     if dictionary.keys.include?(word)
-      puts dictionary[word]
+      puts yes
       new_words << dictionary[word]
     else
       new_words << word
