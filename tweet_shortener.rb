@@ -20,4 +20,4 @@ def word_substituter(tweet)
   new_words.join(" ")
 end
 
-word_substituter("hello ")
+word_substituter("hello")
