@@ -12,6 +12,7 @@ def word_substituter(tweet)
   new_words = []
   words.each do |word|
     if dictionary.keys.include?(word)
+      puts dictionary[word]
       new_words << dictionary[word]
     else
       new_words << word
