@@ -14,13 +14,11 @@ def word_substituter(tweet)
     puts word
     puts dictionary.keys
     if dictionary.keys.include?(word)
-      puts yes
       new_words << dictionary[word]
     else
       new_words << word
     end
   end
-  puts new_words
   new_words.join(" ")
 end
 
