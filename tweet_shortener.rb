@@ -20,7 +20,7 @@ def word_substituter(tweet)
   keys = dictionary.keys
   capitalized_keys = keys.collect {|key| key.capitalize}
     if keys.include?(word) || capitalized_keys.include?(word)
-      new_words << dictionary[word]
+      new_words << dictionary[word.downcase]
     else
       new_words << word
     end
