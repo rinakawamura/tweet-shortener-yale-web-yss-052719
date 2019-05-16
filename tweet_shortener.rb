@@ -23,4 +23,4 @@ def word_substituter(tweet, dictionary)
   new_words.join(" ")
 end
 
-word_substituter("two")
+word_substituter("two", dictionary)
