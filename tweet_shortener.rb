@@ -19,6 +19,7 @@ def word_substituter(tweet)
       new_words << word
     end
   end
+  puts new_words
   new_words.join(" ")
 end
 
