@@ -17,7 +17,7 @@ def word_substituter(tweet)
   words = tweet.split (" ")
   new_words = []
   words.each do |word|
-    if dictionary.keys.include?(word)
+    if dictionary.keys.include?(word) || dictionary.keys.include?(word.capitalize)
       new_words << dictionary[word]
     else
       new_words << word
