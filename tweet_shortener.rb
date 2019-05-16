@@ -11,7 +11,7 @@ def word_substituter(tweet)
   words = tweet.split (" ")
   new_words = []
   words.each do |word|
-    puts "yes"
+    puts dictionary.keys
     if dictionary.keys.include?(word)
       puts dictionary[word]
       new_words << dictionary[word]
