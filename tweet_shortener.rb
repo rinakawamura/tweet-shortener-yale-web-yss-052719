@@ -11,9 +11,6 @@ def word_substituter(tweet, dictionary)
   words = tweet.split (" ")
   new_words = []
   words.each do |word|
-    #puts word
-    #puts dictionary.keys
-    puts dictionary[word]
     if dictionary.keys.include?(word)
       new_words << dictionary[word]
     else
@@ -22,5 +19,3 @@ def word_substituter(tweet, dictionary)
   end
   new_words.join(" ")
 end
-
-word_substituter("two", dictionary)
