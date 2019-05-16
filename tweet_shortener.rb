@@ -23,4 +23,4 @@ def word_substituter(tweet)
   new_words.join(" ")
 end
 
-word_substituter("hello two you be")
+word_substituter("two")
