@@ -9,7 +9,7 @@ def dictionary
   "be" => 'b',
   "you" => 'u',
   "at" => '@',
-  "and" => '&'  
+  "and" => '&'
   }
 end
 
@@ -24,4 +24,10 @@ def word_substituter(tweet)
     end
   end
   new_words.join(" ")
+end
+
+def bulk_tweet_shortener(array)
+  array.each do |tweet|
+    puts word_substituter(tweet)
+  end
 end
