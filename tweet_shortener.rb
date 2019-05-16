@@ -7,7 +7,7 @@ def dictionary
   }
 end
 
-def word_substituter(tweet)
+def word_substituter(tweet, dictionary)
   words = tweet.split (" ")
   new_words = []
   words.each do |word|
